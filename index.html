@@ -24,7 +24,7 @@
           </code>
           <p>Ao final do processamento, qual será o valor da variável SOMA?</p><br>
           <button onclick="ex001()">RESPOSTA</button>
-          <p id="ex001" class="ativo"><strong>Resposta</strong>:</p>
+          <p id="ex001" class="inativo"><strong>Resposta</strong>:</p>
         </li>
         <li>
             <p>
@@ -43,17 +43,20 @@
           <button onclick="ex002()">
             DIGITAR UM NÚMERO
           </button>
-          <p id="ex002" class="ativo">Resposta:</p>
+          <p id="ex002" class="inativo">Resposta:</p>
         </li>
         <li>
           <p>Descubra a lógica e complete o próximo elemento:</p>
           <ol type="a">
-            <li>1, 3, 5, 7, <strong>9</strong></li>
-            <li>2, 4, 8, 16, 32, 64, <strong>128</strong></li>
-            <li>0, 1, 4, 9, 16, 25, 36, <strong>49</strong></li>
-            <li>4, 16, 36, 64, <strong>100</strong></li>
-            <li>1, 1, 2, 3, 5, 8, <strong>13</strong></li>
-            <li>2, 10, 12, 16, 17, 18, 19, <strong>200</strong></li>
+            <li>1, 3, 5, 7, <strong class="inativo ex003">9 => 9 é o próximo número ímpar</strong></li>
+            <li>2, 4, 8, 16, 32, 64, <strong class="ex003 inativo">128 => a sequência está em potência</strong></li>
+            <li>0, 1, 4, 9, 16, 25, 36, <strong class="ex003 inativo">49 => os números estão sempre sendo acrescidos da soma anterior + 2. Por exemplo: 0 + 1, 1 + 3, 4 + 5, 9 + 7...</strong></li>
+            <li>4, 16, 36, 64, <strong class="ex003 inativo">100 => parecido com o anterior, porém acrescendo 8 unidades</strong></li>
+            <li>1, 1, 2, 3, 5, 8, <strong class="ex003 inativo">13 => sequência de Fibonacci</strong></li>
+            <li>2, 10, 12, 16, 17, 18, 19, <strong class="ex003 inativo">200 => somente números que começam com a letra D</strong></li>
+            <button onclick="ex003()">
+              RESPOSTA
+            </button>
           </ol>
         </li>
         <li>
@@ -63,7 +66,8 @@
             <li>Considerar a distância de 100km entre a cidade de Ribeirão Preto <-> Franca.</li>
             <li>Considerar 2 pedágios como obstáculo e que o caminhão leva 5 minutos a mais para passar em cada um deles e o carro possui tag de pedágio (Sem Parar)</li>
             <li>Explique como chegou no resultado.</li>
-            <p><strong>Resposta: </strong> Quando os dois veículos se encontrarem, ambos estarão à mesma distância da cidade de Ribeirão Preto.</p>
+            <button onclick="ex004()">RESPOSTA</button>
+            <p class="inativo" id="ex004"><strong>Resposta: </strong> Quando os dois veículos se encontrarem, ambos estarão à mesma distância da cidade de Ribeirão Preto, pois estão no mesmo ponto na estrada.</p>
           </ol>
         </li>
         <li>
@@ -74,7 +78,7 @@
             <li>Evite usar funções prontas, como, por exemplo, reverse;</li>
           </ol>
           <button onclick="ex005()">RESPOSTA</button>
-          <p id="ex005" class="ativo">Resposta:</p>
+          <p id="ex005" class="inativo">Resposta:</p>
         </li>
       </ul>
     </main>

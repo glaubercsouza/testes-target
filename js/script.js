@@ -8,7 +8,7 @@ function ex001(){
     k = k + 1;
     soma = soma + k;
   }
-  res01.classList.remove('ativo');
+  res01.classList.remove('inativo');
   res01.innerHTML = `<p><strong>Resposta</strong>: O resultado é <strong>${soma}</strong>.</p>`
 }
 
@@ -19,7 +19,7 @@ function ex002() {
   let res02 = document.getElementById('ex002');
   fibonacci[0] = 0;
   fibonacci[1] = 1;
-for (let i = 2; i < 15; i++) {
+for (let i = 2; i < 18; i++) {
   fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
   if (n1 == fibonacci[i]) {
     achou = 1;
@@ -27,12 +27,25 @@ for (let i = 2; i < 15; i++) {
 }
 let frase;
 if (achou == 0) {
-  frase = "O número digitado não pertence à sequência!";
+  frase = "não pertence à sequência!";
 } else {
-  frase = "O número digitado pertence à sequência!";
+  frase = "pertence à sequência!";
 }
-res02.classList.remove('ativo');
-res02.innerHTML = `<p>Resposta: A sequência de Fibonacci é ${fibonacci} </p> <p>${frase} </p>`
+res02.classList.remove('inativo');
+res02.innerHTML = `<p><strong>Resposta</strong>: A sequência de Fibonacci é ${fibonacci } </p> <p>O número ${n1} ${frase} </p>`
+}
+
+function ex003() {
+  let res03 = document.getElementsByClassName('ex003');
+  for (let i = 0; i < res03.length; i++) {
+    res03[i].classList.remove('inativo');
+    
+  }
+}
+
+function ex004() {
+  let res04 = document.getElementById('ex004');
+  res04.classList.remove('inativo');
 }
 
 function ex005() {
@@ -42,6 +55,6 @@ function ex005() {
   for (let i = str.length - 1; i >= 0; i--) {
     novaString += str[i];
   }
-  res05.classList.remove('ativo');
+  res05.classList.remove('inativo');
   res05.innerHTML = `<p><strong>Resposta</strong>: ${novaString}</p>`;
 }
